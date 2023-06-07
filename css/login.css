@@ -1,0 +1,130 @@
+/* Feito por Lucas Davi */
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html{
+    display: flex;
+    justify-content: center;
+    font-family: 'Overpass', sans-serif;
+}
+
+#logo{
+    position: absolute;
+    top: 10%;
+    right: 47%;
+}
+
+h1{
+    top: 30%;
+    right: 36%;
+    font-size: 50px;
+    color: #001E3D;
+    position: absolute;
+}
+
+.input-group{
+    margin-top: 400px;
+}
+
+.divider{
+    padding-top: 50px;
+}
+
+.input-box input{
+    height: 55px;
+    width: 280px;
+    font-size: 20px;
+    border-width: 1px;
+    padding-left: 10px;
+    border-radius: 15px;
+}
+
+.link-group{
+    margin-top: 20px;
+}
+
+.link{
+    color: #CE152F;
+    font-weight: 500;
+    margin-right: 50px;
+}
+
+.login-button{
+    margin-top: 3rem;
+}
+
+.login-button button{
+    width: 300px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    background-color: #1B407A;
+    box-shadow: 2px 3px 4px 1px rgba(0, 0, 0, 0.3);
+}
+
+.login-button button a{
+    font-size: 25px;
+    font-weight: 600;
+    color: #ebebeb;
+    text-decoration: none;
+}
+
+#waves{
+    top: 79%;
+    right: 0%;
+    width: 1920px;
+    position: fixed;
+}
+@media screen and (max-width: 1280px) {
+    #logo{
+        right: 44%;
+    }
+
+    h1{
+        right: 26%;
+    }
+
+    #waves {
+        width: 1280px;
+        top: 83%;
+    }
+
+    .input-group{
+        position: absolute;
+        right: 34%;
+        bottom: 20%;
+    }
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1600px){
+    #waves {
+        min-width: 1300px;
+        max-width: 1600px;
+        min-height: 100px;
+        max-height: 150px;
+        top: 83%;
+    }
+
+    #logo{
+        right: 46%;
+    }
+
+    h1{
+        right: 32%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .input-group {
+        margin-top: 359px;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (min-width: 1301px) and (max-width: 1599px) {
+    h1 {
+      right: 28%; /* Ajuste a porcentagem conforme necessário */
+    }
+  }

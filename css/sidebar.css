@@ -1,0 +1,95 @@
+/*Barra de Navegação*/
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
+
+.link {
+  color: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #E8EEF6;
+  font-family: "Inter", sans-serif;
+  overflow: hidden;
+}
+
+a:hover {
+  background-color: white;
+  border-radius: 4px;
+  color: #16223a !important;
+  text-decoration: none;
+}
+
+.img_nav {
+  border-radius: 100%;
+}
+
+.navBackColor {
+  background: #183d72;
+}
+
+.newclas {
+  background: white;
+}
+
+#sidebar {
+  width: 250px;
+  background-color: #183d72;
+  color: #fff;
+  height: 100vh;
+  position: fixed;
+  transition: all 0.3s;
+  z-index: 1;
+  overflow-y: auto;
+}
+
+.navbar-brand {
+  width: 400px;
+  height: 95px;
+}
+
+.navbar-brand img {
+  margin-left: -85px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#sidebar.active {
+  margin-left: -250px;
+}
+
+#content {
+  margin-left: 250px;
+  transition: all 0.3s;
+}
+
+.sidebar-header {
+  padding: 20px;
+}
+
+ul.components {
+  padding: 0;
+}
+
+ul.components li a {
+  padding: 25px;
+  display: block;
+  color: #fff;
+}
+
+ul.components li.active {
+  background-color: #16223a;
+}
+
+#content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-brand:hover {
+  background-color: #183d72;
+}

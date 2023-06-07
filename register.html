@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="shortcut icon" href="img/logo-icon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - NeuroBank</title>
+</head>
+<body>
+    <img src="img/ondas.png" alt="" id="waves">
+
+    <div class="form">
+        <form id="registration-form" action="#">
+            <div class="input-group">
+                <div class="input-box">
+                    <label for="fantasyname">Nome Fantasia</label>
+                    <input id="fantasyname" type="text" name="fantasyname" placeholder="Nome da empresa" required>
+                </div>
+                
+                <div class="input-box">
+                    <label for="email">E-mail</label>
+                    <input id="email" type="email" name="email" placeholder="Digite o email" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="number">Telefone/Celular</label>
+                    <input type="text" name="numero" id="numeroInput" placeholder="(99) 99999-9999" oninput="formatarNumero()" minlength="15" maxlength="15" ize="15" required> 
+                </div>
+
+                <div class="input-box">
+                    <label for="cnpj">CNPJ</label>
+                    <input id="cnpj" type="text" name="cnpj" placeholder="CNPJ da empresa" pattern="\d{14}" maxlength="14" inputmode="numeric" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="password">Senha</label>
+                    <input id="password" type="password" name="password" placeholder="Digite a Senha" minlength="6" maxlength="8" size="8" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="confirmpassword">Confirmar Senha</label>
+                    <input id="confirmpassword" type="password" name="confirmpassword" placeholder="Confirme a Senha" required>
+                </div>
+
+                <div class="register-button">
+                    <button id="register-button" onclick="registerUser()"> Cadastrar</button>
+                </div>
+            </div>
+
+            <img src="img/Logo NeuroBank.png" alt="Logo NeuroBank">
+        </form>
+    </div>
+
+    <script src="js/register.js"></script>
+</body>
+</html>
