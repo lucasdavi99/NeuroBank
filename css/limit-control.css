@@ -1,0 +1,273 @@
+/*Barra de Navegação*/
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
+.link {
+  color: white;
+}
+
+body {
+  background-color: #E8EEF6; 
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  overflow: hidden;
+}
+
+a:hover {
+  background-color: white;
+  border-radius: 4px;
+  color: #16223a !important;
+  text-decoration: none;
+}
+
+.img_nav {
+  border-radius: 100%;
+}
+
+.navBackColor {
+  background: #183d72;
+}
+
+.newclas {
+  background: white;
+}
+
+#sidebar {
+  width: 250px;
+  background-color: #183d72;
+  color: #fff;
+  height: 100vh;
+  position: fixed;
+  transition: all 0.3s;
+  z-index: 1;
+  overflow-y: auto;
+}
+
+.navbar-brand img {
+  margin-left: 50px;
+}
+
+#sidebar.active {
+  margin-left: -250px;
+}
+
+#content{
+  margin-left: 250px;
+  transition: all 0.3s;
+}
+
+.sidebar-header {
+  padding: 20px;
+}
+
+ul.components {
+  padding: 0;
+}
+
+ul.components li a {
+  padding: 25px;
+  display: block;
+  color: #fff;
+}
+
+ul.components li.active {
+  background-color: #16223a;
+}
+
+#content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-brand:hover {
+  background-color: #183d72;
+}
+
+/* MAIN */
+
+#content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  margin-right: -55%;
+  font-size: 30px;
+  margin-top: 50px;
+}
+
+#valor
+{
+  position: absolute;
+  top: 400px;
+  left: 450px;
+}
+
+#total{
+  position: absolute;
+  top: 400px;
+  right: 200px;
+}
+
+#disponivel{
+  position: absolute;
+  top: 580px;
+  right: 610px;
+}
+
+#limite {
+  position: absolute;
+  top: 700px;
+  right: 520px;
+
+
+}
+
+#limiteValor{
+  content: "";
+  border: none;
+  border-radius: 100px;
+  background-color: #183d72;
+  color: #fff;
+  position: absolute;
+  top: 500px;
+  right: 64px;
+  width: 100px ;
+  height: 27px;
+  transform: translate(859px);
+  
+  
+ 
+  
+}
+
+
+
+
+#limite button {
+  border: none;
+  color: #fff;
+  background-color: #183d72; 
+  border-radius: 100px ;
+  width: 300px;
+  height: 55px ;
+  
+
+}
+
+#credito{
+  position: absolute;
+  top: 600px;
+  right: 628px;
+}
+
+#barra input {
+  border: none;
+  border-radius: 30px;
+  position: absolute;
+  width: 850px;
+  height: 40px ;
+  top: 435px;
+  right: 261px;
+  appearance: none;
+  background-color: #183d72;
+  padding: 10px;
+  
+}
+
+#barra ::-webkit-slider-thumb{
+border: none;
+border-radius: 30px;
+appearance: none;
+display: block;
+background-color: #fafafa;
+width: 20px; ;
+height: 20px;
+}
+
+#barra ::-moz-range-thumb{
+  border: none;
+  border-radius: 30px;
+  appearance: none;
+  display: block;
+  background-color: #28589b;
+  width: 20px; ;
+  height: 20px;
+  }
+  
+  @media screen and (max-width: 1280px) {
+
+    #barra input{
+      position: absolute;
+      width: 580px;
+      height: 40px ;
+      top: 435px;
+      right: 228px;
+    }
+    
+  
+    
+    #limite button {
+      border: none;
+      position: absolute;
+      color: #fff;
+      background-color: #183d72; 
+      border-radius: 100px ;
+      width: 300px;
+      height: 55px ;
+      left: -120px;
+    }
+
+    #limiteValor{
+      content: "";
+      position: absolute;
+      border: none;
+      border-radius: 100px;
+      background-color: #183d72;
+      color: #fff;
+      position: absolute;
+      top: 500px;
+      right: 64px;
+      width: 100px ;
+      height: 27px;
+      transform: translate(700px);
+    }
+      
+      #disponivel{
+        position: absolute;
+        top: 580px;
+        right: 450px;
+      }
+
+      #limite {
+        position: absolute;
+        top: 700px;
+        right: 520px;
+   
+      }
+
+      #credito{
+        position: absolute;
+        top: 600px;
+        right: 470px;
+      }
+      
+    #content{
+      position: absolute;
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      height: 100vh;
+      margin-right: -55%;
+      font-size: 30px;
+      margin-top: 50px;
+      left: 400px;
+
+
+    }
+
+
+  }
