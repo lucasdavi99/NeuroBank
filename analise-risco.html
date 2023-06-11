@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!-- Meta tags Obrigatórias -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="shortcut icon" href="img/logo-icon.png" type="image/x-icon">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-beta1-icons/dist/css/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/sidebar.css">
+        <link rel="stylesheet" href="css/analise-risco.css">
+        <title>Análise de Risco</title>
+        </head>
+    <body>
+    <!-- BARRA DE NAVEGAÇÃO -->
+    <header>
+        <nav class="navbar navbar-expand-sm text-white navBackColor fixed-top">
+            <div class="container-fluid">
+
+                <a href="#" class="navbar-brand"><img src="img/logo_neuro-removebg-preview.png" width="70"></a>
+                    
+
+                    <ul class="navbar-nav ml-4">
+                        <li class="nav-item dropdown">
+                            <a href="" class="nav-link dropdown-toggle link" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class=" mr-2" height="50" style="border-radius: 100%;"  src="img/lucas davi.png">
+                                Lucas Davi
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Configurações</a>
+                                <a class="dropdown-item" href="index.html">Sair</a>
+                            </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <nav id="sidebar">
+        <div class="sidebar-header text-center mx-auto">
+
+        </div>
+
+        <ul class="list-unstyled components">
+            <li class="active">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-graph-down-arrow" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M0 0h1v15h15v1H0V0Zm10 11.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-1 0v2.6l-3.613-4.417a.5.5 0 0 0-.74-.037L7.06 8.233 3.404 3.206a.5.5 0 0 0-.808.588l4 5.5a.5.5 0 0 0 .758.06l2.609-2.61L13.445 11H10.5a.5.5 0 0 0-.5.5Z"/>
+                    </svg> Analisar risco</a>
+            </li>
+            <li class="nav-item">
+                <a href="extract.html" class="nav-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-ruled" viewBox="0 0 16 16">
+                        <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v4h10V2a1 1 0 0 0-1-1H4zm9 6H6v2h7V7zm0 3H6v2h7v-2zm0 3H6v2h6a1 1 0 0 0 1-1v-1zm-8 2v-2H3v1a1 1 0 0 0 1 1h1zm-2-3h2v-2H3v2zm0-3h2V7H3v2z"/>
+                    </svg> Visualizar extratos</a>
+            </li>
+            <li>
+                <a href="block-card.html" class="nav-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-lock" viewBox="0 0 16 16">
+                        <path d="M10 7v1.076c.54.166 1 .597 1 1.224v2.4c0 .816-.781 1.3-1.5 1.3h-3c-.719 0-1.5-.484-1.5-1.3V9.3c0-.627.46-1.058 1-1.224V7a2 2 0 1 1 4 0zM7 7v1h2V7a1 1 0 0 0-2 0zM6 9.3v2.4c0 .042.02.107.105.175A.637.637 0 0 0 6.5 12h3a.64.64 0 0 0 .395-.125c.085-.068.105-.133.105-.175V9.3c0-.042-.02-.107-.105-.175A.637.637 0 0 0 9.5 9h-3a.637.637 0 0 0-.395.125C6.02 9.193 6 9.258 6 9.3z"/>
+                        <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
+                    </svg> Bloquear cartão</a>
+            </li>
+            <li>
+                <a href="#" class="nav-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-receipt" viewBox="0 0 16 16">
+                        <path d="M1.92.506a.5.5 0 0 1 .434.14L3 1.293l.646-.647a.5.5 0 0 1 .708 0L5 1.293l.646-.647a.5.5 0 0 1 .708 0L7 1.293l.646-.647a.5.5 0 0 1 .708 0L9 1.293l.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .801.13l.5 1A.5.5 0 0 1 15 2v12a.5.5 0 0 1-.053.224l-.5 1a.5.5 0 0 1-.8.13L13 14.707l-.646.647a.5.5 0 0 1-.708 0L11 14.707l-.646.647a.5.5 0 0 1-.708 0L9 14.707l-.646.647a.5.5 0 0 1-.708 0L7 14.707l-.646.647a.5.5 0 0 1-.708 0L5 14.707l-.646.647a.5.5 0 0 1-.708 0L3 14.707l-.646.647a.5.5 0 0 1-.801-.13l-.5-1A.5.5 0 0 1 1 14V2a.5.5 0 0 1 .053-.224l.5-1a.5.5 0 0 1 .367-.27zm.217 1.338L2 2.118v11.764l.137.274.51-.51a.5.5 0 0 1 .707 0l.646.647.646-.646a.5.5 0 0 1 .708 0l.646.646.646-.646a.5.5 0 0 1 .708 0l.646.646.646-.646a.5.5 0 0 1 .708 0l.646.646.646-.646a.5.5 0 0 1 .708 0l.646.646.646-.646a.5.5 0 0 1 .708 0l.509.509.137-.274V2.118l-.137-.274-.51.51a.5.5 0 0 1-.707 0L12 1.707l-.646.647a.5.5 0 0 1-.708 0L10 1.707l-.646.647a.5.5 0 0 1-.708 0L8 1.707l-.646.647a.5.5 0 0 1-.708 0L6 1.707l-.646.647a.5.5 0 0 1-.708 0L4 1.707l-.646.647a.5.5 0 0 1-.708 0l-.509-.51z"/>
+                        <path d="M3 4.5a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm8-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5z"/>
+                    </svg> Emitir faturas</a>
+            </li>
+            <li>
+                <a href="limit-control.html" class="nav-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-toggles" viewBox="0 0 16 16">
+                        <path d="M4.5 9a3.5 3.5 0 1 0 0 7h7a3.5 3.5 0 1 0 0-7h-7zm7 6a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm-7-14a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zm2.45 0A3.49 3.49 0 0 1 8 3.5 3.49 3.49 0 0 1 6.95 6h4.55a2.5 2.5 0 0 0 0-5H6.95zM4.5 0h7a3.5 3.5 0 1 1 0 7h-7a3.5 3.5 0 1 1 0-7z"/>
+                    </svg> Controlar limite</a>
+            </li>
+            <li>
+                <a href="relatorio-gerencial.html" class="nav-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-data" viewBox="0 0 16 16">
+                        <path d="M4 11a1 1 0 1 1 2 0v1a1 1 0 1 1-2 0v-1zm6-4a1 1 0 1 1 2 0v5a1 1 0 1 1-2 0V7zM7 9a1 1 0 0 1 2 0v3a1 1 0 1 1-2 0V9z"/>
+                        <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                        <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                    </svg> Relatório gerencial</a>
+            </li>
+        </ul>
+    </nav>
+
+
+<main> <!--Começo do conteudo principal da tela de analise de risco-->
+
+    <div id="container"> <!--Decidi criar uma div onde sua altura e largura é automatica mas que seja independente das caixas dos conteudos-->
+
+        <div class="div_container mb-2 mt-2 mr-2 ml-2"> <!--Aqui está as caixas padroes dos conteudos, havera um backgorud e um arredondamento nas bordas-->
+            <h2 class="pt-3">Informações Pessoais</h2> 
+            
+            <!-- <img src="img/lucas davi.png" class="img_nav line" width="100px" height="100px"> -->
+
+            <div  class="div-caixa">
+                <div class="line">
+                    <p><b>Nome Completo:</b> Lucas Davi da Silva</p>
+                
+                </div>
+
+                <div class="line">
+                    <p><b>Idade:</b> 40 anos</p>
+                    
+                </div>
+
+                <div class="line">
+                    <p><b>CPF:</b> 681.984.074-80</p>
+                </div>
+
+                <div class="line">
+                    <p><b>RG:</b> 41.944.277-7</p>
+                </div>
+
+                <div class="line">
+                    <p><b>Localização:</b> Av. Boa Viagem nº00, Boa Viagem, Recife-PE, Brasil</p>
+                </div>
+
+                <div class="line">
+                    <p><b>Genêro:</b> Homem cisgênero</p>
+                </div>
+
+            
+            </div>
+
+            <div  class="div-caixa">
+                <div class="line">
+                    <p><b>Profissão:</b> Engenheiro de software</p>
+                
+                </div>
+
+                <div class="line">
+                    <p><b>Renda mesal:</b> R$ 14.000,00</p>
+                </div>
+
+                <div class="line">
+                    <p><b>Estado civil:</b> Solteiro</p>
+                </div>
+
+                <div class="line">
+                    <p><b>Telefone:</b> (16) 99681-9798</p>
+                </div>
+
+                <div class="line">
+                    <p><b>Email:</b> lucas-davi98@br.live.com</p>
+                </div>
+
+                <div class="line">
+                    <p><b>PCD:</b> Não</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="div_container mb-2 mt-2 mr-2 ml-2">
+            <h2 class="pt-3">SCR</h2>
+
+            <div class="div-caixa"> <!--COMEÇO DA PRIMIERA SCR-->
+                <div class="line">
+                    <p><b>Empresa:</b> Nu Pagamentos</p>
+                </div>
+
+                <div class="line">
+                    <p><b>CNPJ:</b> 18.236.120/0001-58</p>
+                </div>
+
+                <div class="line">
+                    <p><b>Tipo da dívida:</b> Cartão de crédito</p>
+                </div>
+
+                <div class="line">
+                    <p><b>Começo da dívida:</b> 12/09/2022</p>
+                </div>
+
+                <div class="line">
+                    <p><b>Valor da dívida:</b> R$ 2.500,00</p>
+                </div>
+            </div>
+
+            <div class="div-caixa">
+                <div class="line">
+                    <p><b>Situação atual:</b> Renegociando</p>
+                </div>
+
+                <div class="line">
+                    <p><b>Início da negociação:</b> 05/01/2023</p>
+                </div>
+
+                <div class="line">
+                    <p><b>Prazo previsto para o fim da negociação:</b> 05/06/2023</p>
+                </div>
+
+                <div class="line">
+                    <p><b>Parcela atual:</b> 5/6</p>
+                </div>
+
+                <div class="line">
+                    <p><b>Valor da parcela:</b> R$ 333,33</p>
+                </div>
+            </div>
+
+            <div class="div-caixa ">
+                <div class="line ">
+                    <p><b>Desconto aplicado:</b> R$ 500,00</p>
+                </div>
+                <div class="line ">
+                    <p><b>Situação de pagamentos:</b> Em dia</p>
+                </div>
+            </div>
+            <hr style="width: 100%;" color="black"> <!--FIM DA PRIMEIRA SCR-->
+
+            <div class="div-caixa"> <!--COMEÇO DA SEGUNDA SCR-->
+                <div class="line">
+                    <p><b>Empresa:</b> Bradesco</p>
+                </div>
+
+                <div class="line">
+                    <p><b>CNPJ:</b> 60.746.948/0001-12
+                    </p>
+                </div>
+
+                <div class="line">
+                    <p><b>Tipo da dívida:</b> Cartão de crédito</p>
+                </div>
+
+                <div class="line">
+                    <p><b>Começo da dívida:</b> 05/02/2022</p>
+                </div>
+
+                <div class="line">
+                    <p><b>Valor da dívida atual:</b> R$ 5.400,00</p>
+                </div>
+            </div>
+
+            <div class="div-caixa">
+                <div class="line">
+                    <p><b>Situação atual:</b> Renegociando</p>
+                </div>
+
+                <div class="line">
+                    <p><b>Início da negociação:</b> 05/02/2023</p>
+                </div>
+
+                <div class="line">
+                    <p><b>Prazo previsto para o fim da negociação:</b> 05/12/2023</p>
+                </div>
+
+                <div class="line">
+                    <p><b>Parcela atual:</b> 5/10</p>
+                </div>
+
+                <div class="line">
+                    <p><b>Valor da parcela:</b> R$ 470,00</p>
+                </div>
+            </div>
+
+            <div class="div-caixa ">
+                <div class="line ">
+                    <p><b>Desconto aplicado:</b> R$ 700,00</p>
+                </div>
+                <div class="line ">
+                    <p><b>Situação de pagamentos: </b> Em dia</p>
+                </div>
+            </div>
+            <hr style="width: 100%;" color="black"> <!--FIM DA SEGUNDA SCR-->
+
+            <div class="div-caixa"> <!--COMEÇO DA TERCEIRA SCR-->
+                <div class="line">
+                    <p><b>Empresa:</b> Picpay</p>
+                </div>
+
+                <div class="line">
+                    <p><b>CNPJ:</b> 22.896.431/0001-10</p>
+                </div>
+
+                <div class="line">
+                    <p><b>Tipo da dívida:</b> Cartão de crédito</p>
+                </div>
+
+                <div class="line">
+                    <p><b>Começo da dívida:</b> 05/06/2021</p>
+                </div>
+
+                <div class="line">
+                    <p><b>Valor da dívida:</b> R$ 600,00</p>
+                </div>
+            </div>
+
+            <div class="div-caixa">
+                <div class="line">
+                    <p><b>Situação atual:</b> Quitado</p>
+                </div>
+
+                <div class="line">
+                    <p><b>Início da negociação:</b> 10/01/2022</p>
+                </div>
+
+                <div class="line">
+                    <p><b>Prazo previsto para o fim da negociação:</b> 10/03/2022</p>
+                </div>
+
+                <div class="line">
+                    <p><b>Parcela atual:</b> 3/3</p>
+                </div>
+
+                <div class="line">
+                    <p><b>Valor da parcela:</b> R$ 200,00</p>
+                </div>
+            </div>
+
+            <div class="div-caixa ">
+                <div class="line ">
+                    <p><b>Desconto aplicado:</b> R$ 0,00</p>
+                </div>
+                <div class="line ">
+                    <p><b>Situação de pagamentos: </b> Quitado</p>
+                </div>
+            </div> <!--FIM DA TERCEIRA SRC-->
+        </div>
+
+         <div class="div_container mb-2 mt-2 mr-2 ml-2">
+        <h2 class="pt-3">Protestos</h2>
+
+        
+            <div class="div-caixa"> <!--COMEÇO DA TERCEIRA SCR-->
+                <div class="line">
+                    <p><b>Empresa:</b> Caixa Econômica Federal</p>
+                </div>
+
+                <div class="line">
+                    <p><b>CNPJ:</b> 00.360.305/0001-04</p>
+                </div>
+
+                <div class="line">
+                    <p><b>Tipo da dívida:</b> Cartão de crédito</p>
+                </div>
+
+                <div class="line">
+                    <p><b>Começo da dívida:</b> 05/06/2019</p>
+                </div>
+
+                <div class="line">
+                    <p><b>Valor da dívida:</b> R$ 1.000,00</p>
+                </div>
+            </div>
+
+            <div class="div-caixa">
+                <div class="line">
+                    <p><b>Situação atual:</b> Em protesto</p>
+                </div>
+
+                <div class="line">
+                    <p><b>Data do início do protesto:</b> 05/06/2020</p>
+                </div>
+
+                <div class="line">
+                    <p><b>Numero do cartão :</b> **** **** **** 8806</p>
+                </div>
+
+                <div class="line">
+                    <p><b>Data de vencimento do cartão:</b> 05/28</p>
+                </div>
+
+                <div class="line">
+                    <p><b>CVV:</b> 456</p>
+                </div>
+            </div>
+
+            <div class="div-caixa ">
+                <div class="line ">
+                    <p><b>Taxa de juros:</b> 10.0% anual</p>
+                </div>
+                <div class="line ">
+                    <p><b>Valor da dívida atual: </b> 05/06/2023 / R$ 1.400,00 </p>
+                </div>
+                 <div class="line ">
+                    <p><b>Situação de pagamentos: </b> Em atraso </p>
+                </div>
+            </div> 
+    </div>
+        
+    </div>
+
+
+    </div>
+</main>
+
+
+
+
+
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+</html>

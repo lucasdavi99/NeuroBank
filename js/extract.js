@@ -16,22 +16,19 @@ tds.forEach(td => {
   }
 });
 
-
+//FUNÇÃO PARA BAIXAR PDF
 function exportToPDF() {
-  var doc = new jsPDF();
-  var elementHTML = $('#transactions').html();
-  var specialElementHandlers = {
-      '#elementH': function (element, renderer) {
-          return true;
-      }
-  };
-  doc.fromHTML(elementHTML, 15, 15, {
-      'width': 170,
-      'elementHandlers': specialElementHandlers
-  });
-
-  doc.save('extrato.pdf');
-}
+    var doc = new jsPDF();
+    var transactionsElement = document.querySelector('html');
+  
+    html2canvas(transactionsElement)
+      .then(function (canvas) {
+        var imgData = canvas.toDataURL('image/png');
+        doc.addImage(imgData, 'PNG', 5, 5, 200, 200);
+        doc.save('extrato.pdf');
+      });
+  }
+  
 
 
 /*                             MODAL                                 */

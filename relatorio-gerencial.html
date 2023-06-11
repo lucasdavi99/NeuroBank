@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!-- Meta tags Obrigatórias -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="shortcut icon" href="img/logo-icon.png" type="image/x-icon">
+        
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/relatorio-gerencial.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-beta1-icons/dist/css/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <!-- <script src="js/relatorio.js" async></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+        integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer">
+        </script>
+        <script src="js/relatorio.js" defer></script>
+
+        <title>Relatório gerencial</title>
+        </head>
+    <body>
+    <!-- BARRA DE NAVEGAÇÃO -->
+    <header>
+        <nav class="navbar navbar-expand-sm text-white navBackColor fixed-top">
+            <div class="container-fluid">
+
+                <a href="analise-risco.html" class="navbar-brand" ><img src="img/logo_neuro-removebg-preview.png" width="70"></a>
+                    
+
+                    <ul class="navbar-nav ml-4">
+                        <li class="nav-item dropdown">
+                            <a href="" class="nav-link dropdown-toggle link" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class=" mr-2" height="50" style="border-radius: 100%;"  src="img/lucas davi.png">
+                                Lucas Davi
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Configurações</a>
+                                <a class="dropdown-item" href="index.html">Sair</a>
+                            </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <nav id="sidebar">
+        <div class="sidebar-header text-center mx-auto">
+
+        </div>
+
+        <ul class="list-unstyled components">
+            <li>
+                <a href="analise-risco.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-graph-down-arrow" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M0 0h1v15h15v1H0V0Zm10 11.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-1 0v2.6l-3.613-4.417a.5.5 0 0 0-.74-.037L7.06 8.233 3.404 3.206a.5.5 0 0 0-.808.588l4 5.5a.5.5 0 0 0 .758.06l2.609-2.61L13.445 11H10.5a.5.5 0 0 0-.5.5Z"/>
+                    </svg> Analisar risco</a>
+            </li>
+            <li class="nav-item">
+                <a href="extract.html" class="nav-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-ruled" viewBox="0 0 16 16">
+                        <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v4h10V2a1 1 0 0 0-1-1H4zm9 6H6v2h7V7zm0 3H6v2h7v-2zm0 3H6v2h6a1 1 0 0 0 1-1v-1zm-8 2v-2H3v1a1 1 0 0 0 1 1h1zm-2-3h2v-2H3v2zm0-3h2V7H3v2z"/>
+                    </svg> Visualizar extratos</a>
+            </li>
+            <li>
+                <a href="block-card.html" class="nav-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-lock" viewBox="0 0 16 16">
+                        <path d="M10 7v1.076c.54.166 1 .597 1 1.224v2.4c0 .816-.781 1.3-1.5 1.3h-3c-.719 0-1.5-.484-1.5-1.3V9.3c0-.627.46-1.058 1-1.224V7a2 2 0 1 1 4 0zM7 7v1h2V7a1 1 0 0 0-2 0zM6 9.3v2.4c0 .042.02.107.105.175A.637.637 0 0 0 6.5 12h3a.64.64 0 0 0 .395-.125c.085-.068.105-.133.105-.175V9.3c0-.042-.02-.107-.105-.175A.637.637 0 0 0 9.5 9h-3a.637.637 0 0 0-.395.125C6.02 9.193 6 9.258 6 9.3z"/>
+                        <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
+                    </svg> Bloquear cartão</a>
+            </li>
+            <li>
+                <a href="#" class="nav-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-receipt" viewBox="0 0 16 16">
+                        <path d="M1.92.506a.5.5 0 0 1 .434.14L3 1.293l.646-.647a.5.5 0 0 1 .708 0L5 1.293l.646-.647a.5.5 0 0 1 .708 0L7 1.293l.646-.647a.5.5 0 0 1 .708 0L9 1.293l.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .801.13l.5 1A.5.5 0 0 1 15 2v12a.5.5 0 0 1-.053.224l-.5 1a.5.5 0 0 1-.8.13L13 14.707l-.646.647a.5.5 0 0 1-.708 0L11 14.707l-.646.647a.5.5 0 0 1-.708 0L9 14.707l-.646.647a.5.5 0 0 1-.708 0L7 14.707l-.646.647a.5.5 0 0 1-.708 0L5 14.707l-.646.647a.5.5 0 0 1-.708 0L3 14.707l-.646.647a.5.5 0 0 1-.801-.13l-.5-1A.5.5 0 0 1 1 14V2a.5.5 0 0 1 .053-.224l.5-1a.5.5 0 0 1 .367-.27zm.217 1.338L2 2.118v11.764l.137.274.51-.51a.5.5 0 0 1 .707 0l.646.647.646-.646a.5.5 0 0 1 .708 0l.646.646.646-.646a.5.5 0 0 1 .708 0l.646.646.646-.646a.5.5 0 0 1 .708 0l.646.646.646-.646a.5.5 0 0 1 .708 0l.646.646.646-.646a.5.5 0 0 1 .708 0l.509.509.137-.274V2.118l-.137-.274-.51.51a.5.5 0 0 1-.707 0L12 1.707l-.646.647a.5.5 0 0 1-.708 0L10 1.707l-.646.647a.5.5 0 0 1-.708 0L8 1.707l-.646.647a.5.5 0 0 1-.708 0L6 1.707l-.646.647a.5.5 0 0 1-.708 0L4 1.707l-.646.647a.5.5 0 0 1-.708 0l-.509-.51z"/>
+                        <path d="M3 4.5a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm8-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5z"/>
+                    </svg> Emitir faturas</a>
+            </li>
+            <li>
+                <a href="limit-control.html" class="nav-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-toggles" viewBox="0 0 16 16">
+                        <path d="M4.5 9a3.5 3.5 0 1 0 0 7h7a3.5 3.5 0 1 0 0-7h-7zm7 6a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm-7-14a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zm2.45 0A3.49 3.49 0 0 1 8 3.5 3.49 3.49 0 0 1 6.95 6h4.55a2.5 2.5 0 0 0 0-5H6.95zM4.5 0h7a3.5 3.5 0 1 1 0 7h-7a3.5 3.5 0 1 1 0-7z"/>
+                    </svg> Controlar limite</a>
+            </li>
+            <li class="active">
+                <a href="#" class="nav-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-data" viewBox="0 0 16 16">
+                        <path d="M4 11a1 1 0 1 1 2 0v1a1 1 0 1 1-2 0v-1zm6-4a1 1 0 1 1 2 0v5a1 1 0 1 1-2 0V7zM7 9a1 1 0 0 1 2 0v3a1 1 0 1 1-2 0V9z"/>
+                        <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                        <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                    </svg> Relatório gerencial</a>
+            </li>
+        </ul>
+    </nav>
+
+
+<main> <!--Começo do conteudo principal da tela de analise de risco-->
+    <div class="div-button">
+        <button onclick="imprimir()">Gerar PDF</button>
+    </div>
+    <div id="content"> <!--Decidi criar uma div onde sua altura e largura é automatica mas que seja independente das caixas dos conteudos-->
+        
+        <div class="div_container" id="container">
+
+            <h2>Relatório Gerencial</h2>
+
+            <div class="report-section">
+                <h2 class="report-title">Análise de Inadimplência</h2>
+                <div class="report-data">
+                    <table id="inadimplencia">
+                        <thead>
+                            <tr>
+                                <th>Cliente</th>
+                                <th>Valor em Aberto</th>
+                            </tr>
+                        </thead>
+                    <tbody>
+                    <!-- Dados de inadimplência serão preenchidos dinamicamente aqui -->
+                    <td>Lucas Davi</td>
+                    <td>R$ 0,00</td>
+                    </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="report-section">
+                <h2 class="report-title">Carteira do Cliente</h2>
+                <div class="report-data">
+                    <table id="carteira">
+                        <thead>
+                            <tr>
+                                <th>Cliente</th>
+                                <th>Valor Total Gasto</th>
+                                <th>Início do Contrato</th>
+                                <th>Limite Inicial</th>
+                                <th>Limite Atual</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        <!-- Dados de carteira de clientes serão preenchidos dinamicamente aqui -->
+                            <td>Lucas Davi</td>
+                            <td>R$8.026,33</td>
+                            <td>20/01/2023</td>
+                            <td>R$10.000,00</td>
+                            <td>R$10.000,00</td>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="report-section">
+                <h2 class="report-title">Pagamentos das Faturas</h2>
+                <div class="report-data">
+                    <table id="pagamentos">
+                        <thead>
+                            <tr>
+                                <th>Cliente</th>
+                                <th>Final Cartão</th>
+                                <th>Data Validade</th>
+                                <th>CVV</th>
+                                <th>Data Fechamento</th>
+                                <th>Valor Fatura</th>
+                                <th>Data Vencimento</th>
+                                <th>Data Pagamento</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        <!-- Dados de carteira de clientes serão preenchidos dinamicamente aqui -->
+                            <td>Lucas Davi</td>
+                            <td>9010</td>
+                            <td>12/2025</td>
+                            <td>***</td>
+                            <td>30/01/2023</td>
+                            <td>R$600,00</td>
+                            <td>07/02/2023</td>
+                            <td>05/02/2023</td>
+                        </tbody>
+                        <tbody>
+                            <!-- Dados de carteira de clientes serão preenchidos dinamicamente aqui -->
+                            <td>Lucas Davi</td>
+                            <td>9010</td>
+                            <td>12/2025</td>
+                            <td>***</td>
+                            <td>28/02/2023</td>
+                            <td>R$800,00</td>
+                            <td>07/03/2023</td>
+                            <td>02/03/2023</td>
+                        </tbody>
+                        <tbody>
+                            <!-- Dados de carteira de clientes serão preenchidos dinamicamente aqui -->
+                            <td>Lucas Davi</td>
+                            <td>9010</td>
+                            <td>12/2025</td>
+                            <td>***</td>
+                            <td>30/03/2023</td>
+                            <td>R$1.500,00</td>
+                            <td>07/04/2023</td>
+                            <td>06/04/2023</td>
+                        </tbody>
+                        <tbody>
+                            <!-- Dados de carteira de clientes serão preenchidos dinamicamente aqui -->
+                            <td>Lucas Davi</td>
+                            <td>9010</td>
+                            <td>12/2025</td>
+                            <td>***</td>
+                            <td>30/04/2023</td>
+                            <td>R$1.000,00</td>
+                            <td>07/05/2023</td>
+                            <td>07/05/2023</td>
+                        </tbody>
+                        <tbody>
+                            <!-- Dados de carteira de clientes serão preenchidos dinamicamente aqui -->
+                            <td>Lucas Davi</td>
+                            <td>9010</td>
+                            <td>12/2025</td>
+                            <td>***</td>
+                            <td>30/05/2023</td>
+                            <td>R$3.726,33</td>
+                            <td>07/06/2023</td>
+                            <td>01/06/2023</td>
+                        </tbody>
+                        <tbody>
+                            <!-- Dados de carteira de clientes serão preenchidos dinamicamente aqui -->
+                            <td>Lucas Davi</td>
+                            <td>9010</td>
+                            <td>12/2025</td>
+                            <td>***</td>
+                            <td>30/06/2023</td>
+                            <td>R$400,00</td>
+                            <td>07/07/2023</td>
+                            <td>02/07/2023</td>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="report-section">
+                    <h2 class="report-title">Análise de Fraude</h2>
+                    <div class="report-data">
+                    <table id="fraude">
+                        <thead>
+                        <tr>
+                            <th>Transação</th>
+                            <th>Valor</th>
+                            <th>Data</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <!-- Dados de análise de fraude serão preenchidos dinamicamente aqui -->
+                        <td>Virus1001</td>
+                        <td style="color: red;">R$250,00</td>
+                        <td>05/03/2023</td>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+
+</main>
+
+
+
+
+    <!--Js do relatorio para gerar pdf-->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.3/jspdf.umd.min.js"></script> -->
+
+    
+    
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -1,0 +1,164 @@
+/*Barra de Navegação*/
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
+.link {
+  color: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  
+}
+
+a:hover {
+  background-color: white;
+  border-radius: 4px;
+  color: #16223a !important;
+  text-decoration: none;
+}
+
+.img_nav {
+  border-radius: 100%;
+  
+}
+
+.navBackColor {
+  background: #183d72;
+  z-index: 2;
+
+}
+
+.newclas {
+  background: white;
+}
+
+#sidebar {
+  width: 250px;
+  background-color: #183d72;
+  color: #fff;
+  height: 100vh;
+  position: fixed;
+  transition: all 0.3s;
+  z-index: 1;
+  overflow-y: auto;
+}
+
+.navbar-brand {
+  width: 400px;
+  height: 95px;
+}
+
+.navbar-brand img {
+  margin-left: -85px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#sidebar.active {
+  margin-left: -250px;
+}
+
+#content {
+  margin-left: 250px;
+  transition: all 0.3s;
+}
+
+.sidebar-header {
+  padding: 27px;
+}
+
+ul.components {
+  padding: 0;
+}
+
+ul.components li a {
+  padding: 25px;
+  display: block;
+  color: #fff;
+}
+
+ul.components li.active {
+  background-color: #16223a;
+}
+
+/* #content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.navbar-brand:hover {
+  background-color: #183d72;
+}
+
+/* MAIN */
+
+/* #content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  margin-right: -55%;
+  font-size: 30px;
+  margin-top: 50px;
+} */
+
+/*CSS KERVEN*/
+
+#container { /* Aqui o container está diferente porque testei essa configuração e deu super certo: a div está bem dividade entre a nav e conteudo principal*/
+height: auto;
+width: auto;
+background: #E8EEF6;
+
+}
+
+h2 {
+text-align: center;
+}
+
+.div_container { /* Estilo para as caixas do container*/
+background: #fff;
+height: auto;
+width: auto;
+border-radius: 1%;
+
+
+}
+
+
+.div-caixa{
+display: inline-block;
+flex-direction: column;
+padding-right: 1px;
+padding-left: 30px;
+}
+
+.line {
+display: flex;
+
+}
+
+p {
+color: #183d72;
+}
+
+header {
+margin-bottom: 80px;
+}
+
+@media  (min-width: 1367px) { /*media para tela maiores*/
+  .div_container { 
+    height: auto;
+    width: auto;
+    border-radius: 1%;
+    justify-content: center;
+    text-align: center;
+    
+    
+    }
+}

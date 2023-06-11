@@ -10,6 +10,8 @@
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-beta1-icons/dist/css/bootstrap-icons.min.css">
+        <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js"
+        integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
         integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="css/sidebar.css">
@@ -53,7 +55,7 @@
 
             <ul class="list-unstyled components">
                 <li>
-                    <a href="#">
+                    <a href="analise-risco.html">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-graph-down-arrow" viewBox="0 0 16 16">
                             <path fill-rule="evenodd"
@@ -61,7 +63,7 @@
                         </svg> Analisar risco</a>
                 </li>
                 <li class="active">
-                    <a href="#" class="nav-link">
+                    <a href="extract.html" class="nav-link">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-file-ruled" viewBox="0 0 16 16">
                             <path
@@ -69,7 +71,7 @@
                         </svg> Visualizar extratos</a>
                 </li>
                 <li>
-                    <a href="#" class="nav-link">
+                    <a href="block-card.html" class="nav-link">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-file-earmark-lock" viewBox="0 0 16 16">
                             <path
@@ -97,7 +99,7 @@
                         </svg> Controlar limite</a>
                 </li>
                 <li>
-                    <a href="#" class="nav-link">
+                    <a href="relatorio-gerencial.html" class="nav-link">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-clipboard-data" viewBox="0 0 16 16">
                             <path
@@ -119,17 +121,18 @@
             <!-- <input type="text" id="search" placeholder="Digite para pesquisar"> -->
             <button onclick="filter()"><img src="img/Vector.svg" alt=""> FILTROS</button>
         </div>
-        <div class="buttons"><button onclick="exportToPDF()"><img src="img/🦆 icon _download_.svg" alt=""> EXPORTAR</button></div>
+        <div class="buttons"><button onclick="exportToPDF()"><img src="img/🦆 icon _download_.svg" alt="">
+                EXPORTAR</button></div>
 
 
         <div id="line"></div>
 
         <div id="myModal" class="modal">
             <div class="modal-content">
-              <span class="close"></span>
-              <p id="modalText"></p>
+                <span class="close"></span>
+                <p id="modalText"></p>
             </div>
-          </div>
+        </div>
 
         <table id="transactions">
             <thead>
@@ -196,9 +199,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"
         integrity="sha512-qZvrmS2ekKPF2mSznTQsxqPgnpkI4DNTlrdUmTzrDgektczlKNRRhy5X5AAOnx5S09ydFYWWNSfcEqDTTHgtNA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
