@@ -1,0 +1,54 @@
+.top-wrapper {
+    height: 50px;
+    width: 100vw;
+    background-color: blue
+}
+
+.left-wrapper {
+    width: 100px;
+    height: 100vh;
+    background-color: blue
+}
+
+.card-screen-block-wrapper {
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 60%;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.card-box {
+    max-width: 900px;
+    margin: 0 10rem;
+}
+
+.card-box h2 {
+    margin: 0 0 1rem 0;
+    font-weight: 700;
+}
+
+.card-button {
+    margin: 1rem 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.card-button button {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    background-color: #053675;
+    padding: 1rem;
+    width: 150px;
+    border-radius: 1rem;
+    color: white;
+    margin: 0 0.5rem;
+    border: none;
+}
+
+.card-box h2 {
+    text-align: center;
+}
