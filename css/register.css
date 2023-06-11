@@ -97,17 +97,6 @@ form {
     position: absolute;
 }
 
-@media screen and (max-width: 1638px) {
-    #waves {
-        width: 1638px;
-    }
-
-    form {
-        width: 60%;
-    }
-
-}
-
 @media screen and (max-width: 1280px) {
     body {
         overflow: hidden;
@@ -162,6 +151,10 @@ form {
 @media screen and (min-width: 1300px) and (max-width: 1600px) {
     form {
         width: 69%;
+    }
+
+    #waves {
+        width: 1366px;
     }
 
     .input-group {

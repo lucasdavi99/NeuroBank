@@ -67,7 +67,7 @@ a:hover {
 }
 
 .sidebar-header {
-  padding: 27px;
+  padding: 20px;
 }
 
 ul.components {
@@ -110,7 +110,7 @@ ul.components li.active {
 
 /*CSS KERVEN*/
 
-#container { /* Aqui o container está diferente porque testei essa configuração e deu super certo: a div está bem dividade entre a nav e conteudo principal*/
+#content { /* Aqui o container está diferente porque testei essa configuração e deu super certo: a div está bem dividade entre a nav e conteudo principal*/
 height: auto;
 width: auto;
 background: #E8EEF6;
@@ -119,6 +119,10 @@ background: #E8EEF6;
 
 h2 {
 text-align: center;
+}
+
+.pt-3, .py-3 {
+  padding-top: 4rem!important;
 }
 
 .div_container { /* Estilo para as caixas do container*/

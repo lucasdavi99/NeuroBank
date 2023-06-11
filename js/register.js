@@ -7,7 +7,7 @@ document.getElementById('registration-form').addEventListener('submit', function
     var fantasyName = document.getElementById('fantasyname').value;
     var email = document.getElementById('email').value;
     var number = document.getElementById('numeroInput').value;
-    var cnpj = document.getElementById('cnpj').value;
+    var cnpj = document.getElementById('cpf').value;
     var password = document.getElementById('password').value;
     var confirmPassword = document.getElementById('confirmpassword').value;
 
@@ -51,3 +51,17 @@ function formatarNumero() {
     numeroInput.value = formatado;
 }
 
+//FUNÇÃO PARA MASCARAR O CPF        
+function mascararCPF(cpf) {
+    cpf = cpf.replace(/\D/g, '');
+    cpf = cpf.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, '$1.$2.$3-$4');
+    return cpf;
+  }
+
+  var inputCPF = document.getElementById('cpf');
+
+  inputCPF.addEventListener('input', function() {
+    var cpf = inputCPF.value;
+    var cpfMascarado = mascararCPF(cpf);
+    inputCPF.value = cpfMascarado;
+  });
