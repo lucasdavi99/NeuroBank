@@ -2,174 +2,172 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
 
-@media screen and (max-width: 1920px) {
+html {
+    width: 100%;
+    height: 100%;
+}
 
-    html {
-        width: 100%;
-        height: 100%;
+main {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    font-family: "Inter", sans-serif;
+}
+
+h1 {
+    position: relative;
+    left: 31vh;
+    bottom: 8vh;
+    font-weight: bold;
+    color: #000;
+}
+
+.buttons {
+    position: relative;
+    bottom: 8ch;
+    left: 106ch;
+    float: left;
+    margin-right: 50px;
+}
+
+.buttons img {
+    position: relative;
+    right: 1ch;
+}
+
+.buttons button {
+    width: 235px;
+    height: 59px;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 7px;
+    background-color: #01377E;
+}
+
+#line {
+    position: absolute;
+    right: 4%;
+    top: 28%;
+    height: 2px;
+    width: 1500px;
+    background-color: #000;
+    display: block;
+}
+
+#transactions {
+    position: relative;
+    top: 36vh;
+    right: 24vh;
+    width: 5px;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0 15px;
+}
+
+thead {
+    position: relative;
+    left: 30px;
+}
+
+th {
+    font-size: 24px;
+}
+
+td {
+    box-sizing: border-box;
+    background-color: #fff;
+    height: 70px;
+    padding-right: 300px;
+    padding-left: 20px;
+    font-size: 18px;
+    white-space: nowrap;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+td:first-child {
+    border-radius: 10px 0 0 10px;
+}
+
+td:last-child {
+    padding-right: 50px;
+    border-radius: 0 10px 10px 0;
+}
+
+td:nth-child(3) {
+    padding-right: 50px;
+}
+
+td img {
+    cursor: pointer;
+}
+
+td.value-positive {
+    color: green;
+    font-weight: 600;
+}
+
+td.value.negative {
+    color: red;
+    font-weight: 600;
+}
+
+/* Modal */
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    z-index: 9999;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
     }
 
-    main {
-        display: flex;
-        width: 100%;
-        height: 100%;
-        align-items: center;
-        justify-content: center;
-        font-family: "Inter", sans-serif;
+    to {
+        opacity: 1;
     }
+}
 
-    h1 {
-        position: relative;
-        left: 31vh;
-        bottom: 8vh;
-        font-weight: bold;
-        color: #000;
-    }
+.popup-content {
+    background-color: #fefefe;
 
-    .buttons {
-        position: relative;
-        bottom: 8ch;
-        left: 106ch;
-        float: left;
-        margin-right: 50px;
-    }
+    border-radius: 10px;
+    margin-left: 46%;
+    margin-top: 15%;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px;
+}
 
-    .buttons img {
-        position: relative;
-        right: 1ch;
-    }
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
 
-    .buttons button {
-        width: 235px;
-        height: 59px;
-        border: none;
-        color: #fff;
-        font-size: 24px;
-        cursor: pointer;
-        font-weight: 500;
-        border-radius: 7px;
-        background-color: #01377E;
-    }
-
-    #line {
-        position: absolute;
-        right: 4%;
-        top: 28%;
-        height: 2px;
-        width: 1500px;
-        background-color: #000;
-    }
-
-    #transactions {
-        position: relative;
-        top: 36vh;
-        right: 24vh;
-        width: 5px;
-    }
-
-    table {
-        border-collapse: separate;
-        border-spacing: 0 15px;
-    }
-
-    thead {
-        position: relative;
-        left: 30px;
-    }
-
-    th {
-        font-size: 24px;
-    }
-
-    td {
-        box-sizing: border-box;
-        background-color: #fff;
-        height: 70px;
-        padding-right: 300px;
-        padding-left: 20px;
-        font-size: 18px;
-        white-space: nowrap;
-        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    }
-
-    td:first-child {
-        border-radius: 10px 0 0 10px;
-    }
-
-    td:last-child {
-        padding-right: 50px;
-        border-radius: 0 10px 10px 0;
-    }
-
-    td:nth-child(3) {
-        padding-right: 50px;
-    }
-
-    td img {
-        cursor: pointer;
-    }
-
-    td.value-positive {
-        color: green;
-        font-weight: 600;
-    }
-
-    td.value.negative {
-        color: red;
-        font-weight: 600;
-    }
-
-    /* Modal */
-
-    .popup {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        text-align: center;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-        backdrop-filter: blur(8px);
-        z-index: 9999;
-        animation: fadeIn 0.3s ease-in-out;
-    }
-
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-        }
-
-        to {
-            opacity: 1;
-        }
-    }
-
-    .popup-content {
-        background-color: #fefefe;
-
-        border-radius: 10px;
-        margin-left: 46%;
-        margin-top: 15%;
-        padding: 20px;
-        border: 1px solid #888;
-        width: 300px;
-    }
-
-    .close {
-        color: #aaa;
-        float: right;
-        font-size: 28px;
-        font-weight: bold;
-        cursor: pointer;
-    }
-
-    .close:hover,
-    .close:focus {
-        color: black;
-        text-decoration: none;
-        cursor: pointer;
-    }
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 
@@ -219,7 +217,7 @@
     }
 }
 
-@media screen and (min-width: 1300px) and (max-width: 1600px) {
+@media screen and (min-width: 1366px) and (max-width: 1600px) {
     header {
         margin-bottom: 80px;
     }
@@ -250,8 +248,8 @@
     }
 
     #line {
-        right: 9%;
         width: 853px;
+        right: 8%;
         top: 35%;
     }
 
@@ -262,5 +260,11 @@
 
     td {
         padding-right: 210px;
+    }
+}
+
+@media screen and (width: 1600px) {
+    #line{
+        right: 15%;
     }
 }

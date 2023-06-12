@@ -97,11 +97,11 @@ form {
     position: absolute;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (min-width: 1280px) and (max-width: 1299px) {
     body {
         overflow: hidden;
     }
-    
+
     #waves {
         width: 1280px;
         height: 110px;
@@ -162,13 +162,27 @@ form {
     }
 
     .register-button {
-        top: 88%;
+        top: 81%;
         left: 4%;
     }
 
     .form img {
-        left: 75%;
+        left: 42%;
         width: 370px;
-        bottom: 42%;
+        bottom: 8%;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    #waves {
+        width: 1600px;
+    }
+
+    form {
+        width: 62%;
+    }
+
+    .form img {
+        left: 39%;
     }
 }
