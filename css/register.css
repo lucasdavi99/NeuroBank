@@ -1,23 +1,21 @@
-/* Feito por Lucas Davi */
-
 @import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-html {
+html{
     box-sizing: border-box;
     font-family: 'Overpass', sans-serif;
 }
 
-body {
+body{
     width: 100%;
     height: 100vh;
 }
-
-form {
+    
+form{
     width: 55%;
     margin-left: 30px;
 }
 
-.input-group {
+.input-group{
     display: flex;
     margin-top: 8%;
     flex-wrap: wrap;
@@ -25,14 +23,14 @@ form {
     justify-content: space-between;
 }
 
-.input-box {
+.input-box{
     display: flex;
     margin-left: 32px;
     margin-bottom: 75px;
     flex-direction: column;
 }
 
-.input-box input {
+.input-box input{
     width: 400px;
     height: 45px;
     font-size: 15px;
@@ -42,140 +40,60 @@ form {
     border-color: black;
 }
 
-.input-box label {
+.input-box label{
     font-size: 20px;
     color: #01377E;
     padding-left: 13px;
     padding-bottom: 10px;
 }
 
-.register-button {
+.register-button{
     top: 80%;
     left: 3%;
     position: absolute;
 }
 
-.register-button button {
+.register-button button{
     width: 260px;
     height: 70px;
     border: none;
-    color: #ebebeb;
-    font-size: 25px;
-    font-weight: 700;
-    text-decoration: none;
     cursor: pointer;
     border-radius: 100px;
     background-color: #CE152F;
     box-shadow: 2px 3px 4px 1px rgba(0, 0, 0, 0.3);
 }
 
-.register-button button:active {
+.register-button button:active{
     background-color: #fff;
-    border: 2px solid #CE152F;
-    color: black;
+  border: 2px solid #CE152F;
+  color: black; /* muda a cor do texto para branco */
+    
 }
 
+.register-button button a{
+    color: #ebebeb;
+    font-size: 25px;
+    font-weight: 700;
+    text-decoration: none;
+}
 
-/* #oculto1 {
+#oculto1{
     top: 66.9%;
     left: 22%;
     height: 25px;
     position: absolute;
 }
 
-#oculto2 {
+#oculto2{
     top: 66.9%;
     left: 53.5%;
     height: 25px;
     position: absolute;
-} */
+}
 
 
-.form img {
+.form img{
     left: 68%;
     bottom: 43%;
     position: absolute;
-}
-
-@media screen and (max-width: 1638px) {
-    #waves {
-        width: 1638px;
-    }
-
-    form {
-        width: 60%;
-    }
-
-}
-
-@media screen and (max-width: 1280px) {
-    body {
-        overflow: hidden;
-    }
-    
-    #waves {
-        width: 1280px;
-        height: 110px;
-    }
-
-    form {
-        width: 60%;
-    }
-
-    .input-group {
-        margin-top: 7%;
-    }
-
-    .input-box input {
-        width: 300px;
-        height: 45px;
-    }
-
-    .form img {
-        left: 65%;
-        bottom: 46%;
-        width: 306px;
-    }
-
-    .register-button {
-        top: 78%;
-        left: 5%;
-    }
-
-    .register-button button {
-        width: 194px;
-        height: 59px;
-    }
-
-    /* #oculto1 {
-        left: 25%;
-        top: 62.5%;
-    }
-
-    #oculto2 {
-        left: 58.5%;
-        top: 62.5%;
-    } */
-
-}
-
-@media screen and (min-width: 1300px) and (max-width: 1600px) {
-    form {
-        width: 69%;
-    }
-
-    .input-group {
-        margin-top: 1%;
-    }
-
-    .register-button {
-        top: 88%;
-        left: 4%;
-    }
-
-    .form img {
-        left: 75%;
-        width: 370px;
-        bottom: 42%;
-    }
 }

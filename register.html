@@ -13,7 +13,7 @@
     <img src="img/ondas.png" alt="" id="waves">
 
     <div class="form">
-        <form id="registration-form" action="#">
+        <form action="#">
             <div class="input-group">
                 <div class="input-box">
                     <label for="fantasyname">Nome Fantasia</label>
@@ -27,33 +27,33 @@
 
                 <div class="input-box">
                     <label for="number">Telefone/Celular</label>
-                    <input type="text" name="numero" id="numeroInput" placeholder="(99) 99999-9999" oninput="formatarNumero()" minlength="15" maxlength="15" ize="15" required> 
+                    <input id="number" type="tel" name="number" placeholder="(XX) XXXXX - XXXX" required>
                 </div>
 
                 <div class="input-box">
                     <label for="cnpj">CNPJ</label>
-                    <input id="cnpj" type="text" name="cnpj" placeholder="CNPJ da empresa" pattern="\d{14}" maxlength="14" inputmode="numeric" required>
+                    <input id="cnpj" type="text" name="cnpj" placeholder="CNPJ da empresa" required>
                 </div>
 
                 <div class="input-box">
                     <label for="password">Senha</label>
-                    <input id="password" type="password" name="password" placeholder="Digite a Senha" minlength="6" maxlength="8" size="8" required>
+                    <input id="password" type="password" name="password" placeholder="Digite a Senha" required>
+                    <img src="img/oculto.png" alt="" id="oculto1">
                 </div>
 
                 <div class="input-box">
                     <label for="confirmpassword">Confirmar Senha</label>
                     <input id="confirmpassword" type="password" name="confirmpassword" placeholder="Confirme a Senha" required>
+                    <img src="img/oculto.png" alt="" id="oculto2">
                 </div>
 
                 <div class="register-button">
-                    <button id="register-button" onclick="registerUser()"> Cadastrar</button>
+                    <button><a href="login.html">CADASTRAR</a></button>
                 </div>
             </div>
 
             <img src="img/Logo NeuroBank.png" alt="Logo NeuroBank">
         </form>
     </div>
-
-    <script src="js/register.js"></script>
 </body>
 </html>
