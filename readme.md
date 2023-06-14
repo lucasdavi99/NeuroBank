@@ -71,7 +71,7 @@ Certifique-se de seguir cada passo cuidadosamente e adaptar as instruções conf
 
 Claro! Aqui está a seção onde as pessoas podem contribuir com comandos Git:
 
-## Contribua
+## Contribua com o projeto 
 
 Se você deseja contribuir com comandos Git para o projeto, siga as etapas abaixo:
 
