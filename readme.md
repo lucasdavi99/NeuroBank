@@ -30,6 +30,7 @@ envio de faturas e extratos financeiros.
 3. Abra o terminal Git Bash.
 4. Navegue até a pasta onde deseja clonar o repositório.
 5. Execute o seguinte comando para clonar o repositório:
+
    ```
    git clone link_do_repositório
    ```
@@ -69,7 +70,6 @@ Certifique-se de seguir cada passo cuidadosamente e adaptar as instruções conf
 - Figma
 - Discord
 
-Claro! Aqui está a seção onde as pessoas podem contribuir com comandos Git:
 
 ## Contribua
 
