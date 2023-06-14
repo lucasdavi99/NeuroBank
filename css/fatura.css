@@ -1,0 +1,339 @@
+/*Barra de Navegação*/
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap%22");
+.link {
+  color: white;
+}
+
+body {
+  background-color: #E8EEF6; 
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  overflow: hidden;
+}
+
+a:hover {
+  background-color: white;
+  border-radius: 4px;
+  color: #16223a !important;
+  text-decoration: none;
+}
+
+.img_nav {
+  border-radius: 100%;
+}
+
+.navBackColor {
+  background: #183d72;
+}
+
+.newclas {
+  background: white;
+}
+
+#sidebar {
+  width: 250px;
+  background-color: #183d72;
+  color: #fff;
+  height: 100vh;
+  position: fixed;
+  transition: all 0.3s;
+  z-index: 1;
+  overflow-y: auto;
+}
+
+.navbar-brand {
+  width: 400px;
+  height: 95px;
+}
+
+.navbar-brand img {
+  margin-left: -85px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+#sidebar.active {
+  margin-left: -250px;
+}
+
+#content{
+  margin-left: 250px;
+  transition: all 0.3s;
+}
+
+.sidebar-header {
+  padding: 1px;
+}
+
+ul.components {
+  padding: 0;
+}
+
+ul.components li a {
+  padding: 25px;
+  display: block;
+  color: #fff;
+}
+
+ul.components li.active {
+  background-color: #16223a;
+}
+
+#content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-brand:hover {
+  background-color: #183d72;
+}
+
+/* MAIN */
+
+
+#transactions {
+    position: relative;
+    top: 40vh;
+    right: -55vh;
+    width: 5px;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0 15px;
+}
+
+thead {
+    position: relative;
+    left: 30px;
+}
+
+th {
+    font-size: 24px;
+}
+
+td {
+    box-sizing: border-box;
+    background-color: #fff;
+    height: 70px;
+    padding-right: 300px;
+    padding-left: 20px;
+    font-size: 18px;
+    white-space: nowrap;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+td:first-child {
+    border-radius: 10px 0 0 10px;
+}
+
+td:last-child {
+    padding-right: 50px;
+    border-radius: 0 10px 10px 0;
+}
+
+td:nth-child(3) {
+    padding-right: 50px;
+}
+
+td img {
+    cursor: pointer;
+}
+
+td.value-positive {
+    color: green;
+    font-weight: 600;
+}
+
+td.value.negative {
+    color: red;
+    font-weight: 600;
+}
+
+
+#gerar button {
+    border: none;
+    color: #ffffff;
+    background-color: #183d72; 
+    border-radius: 10px ;
+    width: 200px;
+    height: 50px ;
+    position: absolute;
+  
+  }
+
+  #gerar{
+    position: absolute;
+    top: 720px;
+    right: 379px;
+
+  }
+
+
+  #dia button {
+    border: none;
+    position: absolute;
+    color: #ffffff;
+    background-color: #183d72; 
+    border-radius: 10px ;
+    width: 300px;
+    height: 120px ;
+    right: 196px;
+    top: 280px;
+  }
+  #vec button {
+    border: none;
+    position: absolute;
+    color: #ffffff;
+    background-color: #183d72; 
+    border-radius: 10px ;
+    width: 300px;
+    height: 120px ;
+    left: 430px;
+    top: 320px;
+  
+  }
+  #valor button {
+    border: none;
+    position: absolute;
+    color: #ffffff;
+    background-color: #183d72; 
+    border-radius: 10px ;
+    width: 300px;
+    height: 120px ;
+    right: 520px;
+    top: 280px;
+  }
+   
+  #vec button {
+    border: none;
+    position: absolute;
+    color: #ffffff;
+    background-color: #183d72; 
+    border-radius: 10px ;
+    width: 300px;
+    height: 120px ;
+    left: 457px;
+    top: 280px;
+  
+  } #melhor  {
+    color: #ffffff;
+    position: absolute;
+    left: 465px;
+    top: 300px;
+  
+  }
+  #disponivel  {
+    color: #ffffff;
+    position: absolute;
+    left: 465px;
+    top: 350px;
+  
+  }
+
+  #vencimento  {
+    color: #ffffff;
+    position: absolute;
+    right: 255px;
+    top: 280px;
+  }
+
+  #fatura
+    {
+    color: #ffffff;
+    position: absolute;
+    right: 238px;
+    top: 320px;
+    border: none;
+  }
+
+
+   #total  {
+    color: #ffffff;
+    position: absolute;
+    left: 857px;
+    top: 280px;
+  
+  }
+
+  #ano  {
+    color: #ffffff;
+    position: absolute;
+    left: 820px;
+    top: 340px;
+  
+  }
+
+  hr  {
+    size: 100%;
+    color: #000000;
+    width: 60%;
+    margin-right: 12%;
+    margin-top: -10%;
+    
+  }
+
+
+  #nome {
+    color: #000000;
+    position: absolute;
+    left: 435px;
+    top: 130px;
+  
+  }
+
+  #logo2 {
+
+  float: right;
+  margin-right: 22%;
+  margin-top: 35px;
+  }
+
+
+  #cartao{
+    position: absolute;
+    right: 12%;
+    top: 126px;
+  
+  }
+
+  #cartao button{
+  border: none;
+  width: 130px;
+  height: 40px;
+  background-color: #183d72;
+  color: #ffffff;
+  border-radius: 5px;
+  }
+
+  #cine{
+    position: relative;
+    top: 50vh;
+    right: -55vh;
+    width: 50px;
+
+  }
+
+
+  
+
+  #bdaymonth{
+    position: absolute;
+    top: 220px;
+    right: 200px;
+    background-color: #183d72;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    height: 30px;
+    width: 190px;
+
+  }
+
+

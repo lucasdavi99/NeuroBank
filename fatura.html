@@ -2,27 +2,32 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Meta tags Obrigatórias -->
+  <meta charset="utf-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bloqueio</title>
-  <link rel="shortcut icon" href="img/logo-icon.png" type="image/x-icon">
+
+  <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-beta1-icons/dist/css/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/fatura.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
     integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/sidebar.css">
-  <link rel="stylesheet" href="css/block-card.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"></script>
+  <title>fatura</title>
+  <link rel="shortcut icon" href="img/logo-icon.png" type="image/x-icon">
+
 </head>
 
+
 <body>
+  <!-- BARRA DE NAVEGAÇÃO -->
+
   <header>
-    <nav class="navbar navbar-expand-sm text-white navBackColor fixed-top">
+    <nav class="navbar navbar-expand-sm text-white navBackColor">
       <div class="container-fluid">
 
         <a href="#" class="navbar-brand"><img src="img/logo_neuro-removebg-preview.png" width="70"></a>
@@ -37,12 +42,12 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="#">Configurações</a>
-              <a class="dropdown-item" href="index.html">Sair</a>
+              <a class="dropdown-item" href="#">Sair</a>
             </div>
-
-          </li>
-        </ul>
-
+      </div>
+      </li>
+      </ul>
+      </div>
       </div>
     </nav>
     <nav id="sidebar">
@@ -58,7 +63,7 @@
                 d="M0 0h1v15h15v1H0V0Zm10 11.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-1 0v2.6l-3.613-4.417a.5.5 0 0 0-.74-.037L7.06 8.233 3.404 3.206a.5.5 0 0 0-.808.588l4 5.5a.5.5 0 0 0 .758.06l2.609-2.61L13.445 11H10.5a.5.5 0 0 0-.5.5Z" />
             </svg> Analisar risco</a>
         </li>
-        <li>
+        <li class="nav-item">
           <a href="extract.html" class="nav-link">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-ruled"
               viewBox="0 0 16 16">
@@ -66,8 +71,8 @@
                 d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v4h10V2a1 1 0 0 0-1-1H4zm9 6H6v2h7V7zm0 3H6v2h7v-2zm0 3H6v2h6a1 1 0 0 0 1-1v-1zm-8 2v-2H3v1a1 1 0 0 0 1 1h1zm-2-3h2v-2H3v2zm0-3h2V7H3v2z" />
             </svg> Visualizar extratos</a>
         </li>
-        <li class="active">
-          <a href="#" class="nav-link">
+        <li>
+          <a href="block-card.html" class="nav-link">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
               class="bi bi-file-earmark-lock" viewBox="0 0 16 16">
               <path
@@ -76,7 +81,7 @@
                 d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z" />
             </svg> Bloquear cartão</a>
         </li>
-        <li>
+        <li class="active">
           <a href="fatura.html" class="nav-link">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-receipt"
               viewBox="0 0 16 16">
@@ -110,25 +115,136 @@
     </nav>
   </header>
 
-  <div class="card-screen-block-wrapper">
-    <div class="card-box card-fisic-wrapper">
-      <h2>Cartão Fisico</h2>
-      <img id="card-image" width="400px" src="img/card-img.png" alt="" />
-      <div class="card-button button-block">
-        <button onclick="alternarBloqueio()">Bloquear</button>
-      </div>
-    </div>
-    <div class="card-box card-virtual-wrapper">
-      <h2>Cartão Virtual</h2>
-      <img width="400px" src="imagens/card-img.png" alt="" />
-      <div class="card-button button-block-delete">
-        <button>Bloquear</button>
-        <button>Excluir Cartão</button>
-      </div>
-    </div>
-  </div>
-  </div>
+  <main>
+    <img src="img/images 1.png" id="logo2" width="60px">
+    <table id="transactions">
 
+      <tbody>
+        <tr>
+          <td>20 JAN</td>
+          <td>CineMax</td>
+          <td>-R$ 280,00</td>
+
+        </tr>
+
+        <tr>
+          <td>15 FEV</td>
+          <td>Centauro</td>
+          <td>-R$ 265,90</td>
+
+        </tr>
+        <tr>
+          <td>25 FEV</td>
+          <td> Adidas</td>
+          <td>-R$ 500,00</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+
+    <div id="gerar">
+      <div class="container center-container">
+        <button onclick="exportToPDF()">Gerar Fatura</button>
+      </div>
+    </div>
+
+
+    <div id="dia">
+      <div class="container center-container">
+        <button></button>
+      </div>
+    </div>
+
+    <div id="vec">
+      <div class="container center-container">
+        <button></button>
+      </div>
+    </div>
+
+    <div id="valor">
+      <div class="container center-container">
+        <button></button>
+      </div>
+    </div>
+
+    <div id="melhor">
+      <div class="container center-container">
+        <p>Melhor dia de compra:⠀⠀⠀ 30/05</p>
+      </div>
+    </div>
+
+    <div id="disponivel">
+      <div class="container center-container">
+        <p>Limite disponivel:⠀⠀⠀R$: 6.273,64 </p>
+      </div>
+    </div>
+
+    <div id="total">
+      <div class="container center-container">
+        <p>
+        <h5>Vencimento</h5>
+        </p>
+
+      </div>
+    </div>
+
+    <div id="vencimento">
+      <div class="container center-container">
+        <p>
+        <h5>Valor da Fatura </h5>
+        </p>
+
+      </div>
+    </div>
+
+    <div id="ano">
+      <div class="container center-container">
+        <h2>07/06/2023</h2>
+      </div>
+    </div>
+
+    <div id="fatura">
+      <div class="container center-container">
+        <p>
+        <h2>R$: 3726,36</h2>
+        </p>
+      </div>
+    </div>
+    <hr>
+
+    <div id="nome">
+      <div class="container center-container">
+        <h1>FATURA</h1>
+
+
+      </div>
+    </div>
+
+    <div id="cartao">
+      <button>NeuroBank</button>
+
+    </div>
+
+    <form>
+      <label for="bdaymonth"></label>
+      <input type="month" id="bdaymonth" name="bdaymonth">
+
+    </form>
+
+
+
+
+
+  </main>
+
+
+
+
+
+
+  <!-- JavaScript (Opcional) -->
+  <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
@@ -139,22 +255,49 @@
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
 
-    <script>
-      var bloqueado = false;
-      var imagem = document.getElementById('card-image');
-      var botao = document.querySelector('.card-button button');
-    
-      function alternarBloqueio() {
-        bloqueado = !bloqueado;
-        if (bloqueado) {
-          imagem.style.filter = 'grayscale(100%)';
-          botao.textContent = 'Desbloquear';
-        } else {
-          imagem.style.filter = 'none';
-          botao.textContent = 'Bloquear';
+  <script>//Função para mudar a cor de acordo com a transação
+    const table = document.querySelector('table');
+    const tds = table.querySelectorAll('td');
+
+    tds.forEach(td => {
+      const value = parseFloat(td.innerText.replace('R$ ', '').replace(',', '.'));
+
+      if (value !== 0) {
+        td.classList.add('value');
+
+        if (value < 0) {
+          td.classList.add('negative');
         }
       }
-    </script>
+    });
+
+
+  </script>
+  </script>
+  <script>
+    function exportToPDF() {
+      var doc = new jsPDF();
+      var elementHTML = $('body').html();
+      var specialElementHandlers = {
+        '#elementH': function (element, renderer) {
+          return true;
+        }
+      };
+      doc.fromHTML(elementHTML, 15, 15, {
+        'width': 170,
+        'elementHandlers': specialElementHandlers
+      });
+
+      doc.save('extrato.pdf');
+    }
+
+  </script>
+
+
+
+
+  <script src="js/fatura.js"></script>
+
 
 </body>
 
