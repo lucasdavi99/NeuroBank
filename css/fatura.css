@@ -341,11 +341,43 @@ hr {
 
 }
 
-@media screen and (min-width: 1920px) {
-  main {
-    width: 100%;
-    height: 100%;
+@media screen and (width: 1366px) {
+  #logo2 {
+    margin-right: 23%;
+    margin-top: 5px;
   }
+
+  hr {
+    margin-top: -14%;
+    margin-right: 10%;
+  }
+
+  #bdaymonth {
+    right: 108px;
+  }
+
+  #transactions {
+    right: -42vh;
+  }
+
+  #dia button {
+    right: 98px;
+  }
+
+  #valor button {
+    right: 421px;
+  }
+
+  #vec button {
+    left: 326px;
+  }
+
+  #melhor, #disponivel {
+    left: 327px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
 
   #valor button {
     right: 35%;
