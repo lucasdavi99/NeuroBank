@@ -33,7 +33,7 @@
             <a href="" class="nav-link dropdown-toggle link" id="navbarDropdown" role="button" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false"><img class=" mr-2" height="50" style="border-radius: 100%;"
                 src="img/lucas davi.png">
-              Lucas Davi
+              <span class="active-user"></span>
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="#">Configurações</a>
@@ -113,17 +113,18 @@
   <div class="card-screen-block-wrapper">
     <div class="card-box card-fisic-wrapper">
       <h2>Cartão Fisico</h2>
-      <img id="card-image" width="400px" src="img/card-img.png" alt="" />
+      <img id="card-image" width="400px" src="img/Groupfisic-card.svg" alt="Cartão Fisico" />
       <div class="card-button button-block">
         <button onclick="alternarBloqueio()">Bloquear</button>
       </div>
     </div>
+
     <div class="card-box card-virtual-wrapper">
       <h2>Cartão Virtual</h2>
-      <img width="400px" src="imagens/card-img.png" alt="" />
+      <img id="card-virtual-image" width="400px" src="img/Group 3-virtual-card.svg" alt="" />
       <div class="card-button button-block-delete">
-        <button>Bloquear</button>
-        <button>Excluir Cartão</button>
+        <button id="block-button" onclick="toggleBlock()">Bloquear</button>
+        <button id="delete-button" onclick="toggleDelete()">Excluir Cartão</button>
       </div>
     </div>
   </div>
@@ -139,22 +140,8 @@
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
 
-    <script>
-      var bloqueado = false;
-      var imagem = document.getElementById('card-image');
-      var botao = document.querySelector('.card-button button');
-    
-      function alternarBloqueio() {
-        bloqueado = !bloqueado;
-        if (bloqueado) {
-          imagem.style.filter = 'grayscale(100%)';
-          botao.textContent = 'Desbloquear';
-        } else {
-          imagem.style.filter = 'none';
-          botao.textContent = 'Bloquear';
-        }
-      }
-    </script>
+  <script src="js/user.js"></script>
+  <script src="js/block-card.js"></script>
 
 </body>
 

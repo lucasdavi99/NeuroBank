@@ -12,12 +12,21 @@ document.getElementById('login-button').addEventListener('click', function(event
   var user = users.find(function(user) {
       return user.cnpj === cnpj && user.password === password;
   });
-
+  
+  var isUserRegistered = users.some(function(user) {
+    return user.cnpj === cnpj;
+  });
+  
+  if (!isUserRegistered) {
+    alert('Usuário não cadastrado! Por favor, faça seu cadastro.');
+    return;
+  }
   if (!user) {
       alert('CPF ou senha incorretos!');
       return;
   }
-
+  
+  
   
   localStorage.setItem('loggedUser', JSON.stringify(user));
   window.location.href = "analise-risco.html"; 
