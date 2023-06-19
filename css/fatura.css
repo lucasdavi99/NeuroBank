@@ -2,6 +2,74 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap%22");
 
+.dark-theme {
+  --color-text: #fff;
+  --color-background: #181a1e;
+  --color-dark: #101214;
+  --color-white: #202529;
+  --color-dark-variant: #a3bdcc;
+  --color-light: rgba(0, 0, 0, 0.4);
+  --box-shadow: 0 .5rem 1.5rem rgb(255, 255, 255);
+}
+
+
+
+.dark-theme header {
+  background: var(--color-dark);
+  color: black;
+}
+
+.dark-theme body {
+  background: var(--color-background);
+  color: var(--color-background);
+}
+
+.dark-theme nav {
+  background: var(--color-dark);
+}
+
+
+.dark-theme #sidebar {
+  background: var(--color-dark);
+}
+
+.dark-theme a {
+  background: var(--color-dark);
+  color: var(--color-text);
+}
+
+
+.dark-theme td {
+  background: var(--color-text);
+  color: var(--color-background);
+}
+
+.dark-theme p {
+  color: var(--color-background);
+}
+
+
+.dark-theme h1 {
+  color: var(--color-text);
+}
+
+.dark-theme .navbar-brand:hover {
+  background: var(--color-dark);
+}
+
+.dark-theme button {
+  background: var(--color-text) !important;
+  color: var(--color-background) !important;
+}
+
+.dark-theme button:hover {
+  box-shadow: none;
+}
+
+.dark-theme hr {
+  border: 1px solid var(--color-text);
+}
+
 .link {
   color: white;
 }
@@ -55,7 +123,6 @@ a:hover {
   height: 100%;
   object-fit: cover;
 }
-
 
 #sidebar.active {
   margin-left: -250px;
@@ -172,7 +239,7 @@ td.value.negative {
 #gerar {
   position: absolute;
   top: 720px;
-  right: 379px;
+  right: 393px;
 
 }
 
@@ -289,7 +356,7 @@ hr {
   color: #000000;
   position: absolute;
   left: 435px;
-  top: 130px;
+  top: 135px;
 
 }
 
@@ -297,14 +364,14 @@ hr {
 
   float: right;
   margin-right: 22%;
-  margin-top: 35px;
+  margin-top: 21px;
 }
 
 
 #cartao {
   position: absolute;
-  right: 12%;
-  top: 126px;
+  right: 12.5%;
+  top: 142px;
 
 }
 
@@ -330,7 +397,7 @@ hr {
 
 #bdaymonth {
   position: absolute;
-  top: 220px;
+  top: 236px;
   right: 200px;
   background-color: #183d72;
   color: #fff;
@@ -341,19 +408,29 @@ hr {
 
 }
 
+
 @media screen and (width: 1366px) {
+  #nome {
+    left: 23.5%;
+  }
+  
   #logo2 {
-    margin-right: 23%;
-    margin-top: 5px;
+    margin-right: 17%;
+    margin-top: 18px;
+  }
+
+  #cartao {
+    right: 6.5%;
   }
 
   hr {
-    margin-top: -14%;
-    margin-right: 10%;
+    margin-top: -12%;
+    margin-right: 6.5%;
+    width: 69%;
   }
 
   #bdaymonth {
-    right: 108px;
+    right: 84px;
   }
 
   #transactions {
@@ -361,52 +438,86 @@ hr {
   }
 
   #dia button {
-    right: 98px;
+    right: 82px;
   }
 
   #valor button {
-    right: 421px;
+    right: 406px;
   }
 
   #vec button {
-    left: 326px;
+    left: 337px;
   }
 
-  #melhor, #disponivel {
-    left: 327px;
+  #gerar {
+    right: 19%;
+  }
+
+  p {
+    margin-left: -122px;
   }
 }
 
 @media screen and (min-width: 1920px) {
 
+  #nome {
+    left: 29%;
+    top: 143px;
+  }
+
+  #cartao {
+    top: 15%;
+    right: 21.5%;
+  }
+
   #valor button {
-    right: 35%;
+    right: 33%;
+    top: 33%;
   }
 
   #transactions {
     right: -58vh;
+    top: 46vh;
   }
 
   #gerar button {
     top: 7vw;
-    right: 4vh;
+    right: 1vh;
+  }
+
+  #dia button {
+    right: 314px;
+    top: 33%;
+  }
+
+  #vec button {
+    top: 33%;
+    left: 29.5%;
+  }
+
+  p {
+    margin-top: 40px;
+    margin-left: 105px;
   }
 
   .mural {
     margin-right: 100px;
   }
 
-  #dia button {
-    right: 268px;
-  }
 
   #logo2 {
-    margin-right: 20%;
-    margin-top: 6px;
+    margin-right: 29%;
+    margin-top: 23px;
   }
 
   hr {
     margin-right: 15%;
-    margin-top: -10%;
+    margin-top: -8%;
   }
+
+  #bdaymonth {
+    top: 257px;
+    right: 412px;
+  }
+
 }

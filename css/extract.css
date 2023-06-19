@@ -1,6 +1,70 @@
 /* Feito por Lucas Davi */
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
+.dark-theme {
+    --color-text: #fff;
+    --color-background: #181a1e;
+    --color-dark: #101214;
+    --color-white: #202529;
+    --color-dark-variant: #a3bdcc;
+    --color-light: rgba(0, 0, 0, 0.4);
+    --box-shadow: 0 .5rem 1.5rem rgb(255, 255, 255);
+  }
+  
+  
+  
+  .dark-theme  header{
+    background: var(--color-dark);
+    color: black;
+  }
+  .dark-theme body {
+    background: var(--color-background);
+    color: var(--color-background);
+  }
+  .dark-theme nav {
+    background: var(--color-dark);
+  }
+  
+  
+  .dark-theme #sidebar {
+    background: var(--color-dark);
+  }
+  
+  .dark-theme a{
+    background: var(--color-dark);
+    color: var(--color-text);
+  }
+  
+  
+  .dark-theme td{
+    background: var(--color-text);
+    color: var(--color-background);
+  }
+  
+  .dark-theme a:hover{
+    background: var(--color-text);
+  }
+  
+  .dark-theme h1{
+    color: var(--color-text);
+  }
+  .dark-theme th{
+    color: var(--color-text);
+  }
+  .dark-theme .navbar-brand:hover{
+    background:var(--color-dark);
+  }
+  .dark-theme button{
+    background: var(--color-text) !important;
+    color: var(--color-background) !important;  
+  }
+  
+  .dark-theme button:hover{
+    box-shadow: none;
+  }
+  .dark-theme #line{
+    border: 1px solid var(--color-text);
+  }
 
 html {
     width: 100%;
@@ -264,7 +328,7 @@ td.value.negative {
 }
 
 @media screen and (width: 1600px) {
-    #line{
+    #line {
         right: 15%;
     }
 }

@@ -67,3 +67,8 @@ function toggleDelete() {
     image.setAttribute("src", nextSVG);
   }
 }
+
+
+
+
+

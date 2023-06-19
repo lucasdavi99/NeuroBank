@@ -1,6 +1,73 @@
 /*Barra de Navegação*/
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
+
+.dark-theme {
+  --color-text: #fff;
+  --color-background: #181a1e;
+  --color-dark: #101214;
+  --color-white: #202529;
+  --color-dark-variant: #a3bdcc;
+  --color-light: rgba(0, 0, 0, 0.4);
+  --box-shadow: 0 .5rem 1.5rem rgb(255, 255, 255);
+}
+
+.dark-theme header {
+  background: var(--color-dark);
+  color: black;
+}
+
+.dark-theme body {
+  background: var(--color-dark);
+  color: var(--color-background);
+}
+
+.dark-theme nav {
+  background: var(--color-dark);
+}
+
+
+.dark-theme #sidebar {
+  background: var(--color-dark);
+}
+
+.dark-theme a {
+  background: var(--color-dark);
+  color: var(--color-text);
+}
+
+.dark-theme #content {
+  background: var(--color-background);
+}
+
+.dark-theme .div_container {
+  background: var(--color-dark);
+}
+
+.dark-theme p {
+  color: var(--color-text);
+}
+
+.dark-theme h2 {
+  color: var(--color-text);
+}
+
+.dark-theme a:hover {
+  background: var(--color-text);
+}
+
+.dark-theme .navbar-brand:hover {
+  background: var(--color-dark);
+}
+
+.dark-theme .line {
+  border: 1px solid var(--color-dark);
+}
+
+.dark-theme ul.components li.active {
+  background-color: aquamarine;
+}
+
 .link {
   color: white;
 }
@@ -9,7 +76,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Inter", sans-serif;
-  
+
 }
 
 a:hover {
@@ -21,7 +88,7 @@ a:hover {
 
 .img_nav {
   border-radius: 100%;
-  
+
 }
 
 .navBackColor {
@@ -110,59 +177,65 @@ ul.components li.active {
 
 /*CSS KERVEN*/
 
-#content { /* Aqui o container está diferente porque testei essa configuração e deu super certo: a div está bem dividade entre a nav e conteudo principal*/
-height: auto;
-width: auto;
-background: #E8EEF6;
+#content {
+  /* Aqui o container está diferente porque testei essa configuração e deu super certo: a div está bem dividade entre a nav e conteudo principal*/
+  height: auto;
+  width: auto;
+  background: #E8EEF6;
 
 }
 
 h2 {
-text-align: center;
+  text-align: center;
 }
 
-.pt-3, .py-3 {
-  padding-top: 4rem!important;
+.pt-3,
+.py-3 {
+  padding-top: 4rem !important;
+  padding-bottom: 3rem;
 }
 
-.div_container { /* Estilo para as caixas do container*/
-background: #fff;
-height: auto;
-width: auto;
-border-radius: 1%;
+.div_container {
+  /* Estilo para as caixas do container*/
+  background: #fff;
+  height: auto;
+  width: auto;
+  border-radius: 1%;
 
 
 }
 
 
-.div-caixa{
-display: inline-block;
-flex-direction: column;
-padding-right: 1px;
-padding-left: 30px;
+.div-caixa {
+  display: inline-block;
+  flex-direction: column;
+  padding-right: 1px;
+  padding-left: 30px;
 }
 
 .line {
-display: flex;
+  display: flex;
 
 }
 
 p {
-color: #183d72;
+  color: #183d72;
 }
 
 header {
-margin-bottom: 80px;
+  margin-bottom: 80px;
 }
 
-@media  (min-width: 1367px) { /*media para tela maiores*/
-  .div_container { 
+@media (min-width: 1367px) {
+
+  /*media para tela maiores*/
+  .div_container {
     height: auto;
     width: auto;
     border-radius: 1%;
     justify-content: center;
     text-align: center;
-    
-    
-    }
+
+
+  }
 }

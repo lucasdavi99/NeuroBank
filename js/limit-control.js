@@ -28,3 +28,8 @@ window.addEventListener('load', () => {
 
 const btnAjustarLimite = document.getElementById('btnAjustarLimite');
 btnAjustarLimite.addEventListener('click', salvarLimiteCredito);
+
+
+
+
+

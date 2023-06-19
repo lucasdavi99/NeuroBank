@@ -2,9 +2,77 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
 
+.dark-theme {
+  --color-text: #fff;
+  --color-background: #181a1e;
+  --color-dark: #101214;
+  --color-white: #202529;
+  --color-dark-variant: #a3bdcc;
+  --color-light: rgba(0, 0, 0, 0.4);
+  --box-shadow: 0 .5rem 1.5rem rgb(255, 255, 255);
+}
+
+
+.dark-theme  header{
+  background: var(--color-dark);
+  color: black;
+}
+.dark-theme body {
+  background: var(--color-background);
+  color: var(--color-background);
+}
+.dark-theme nav {
+  background: var(--color-dark);
+}
+
+.dark-theme #sidebar {
+  background: var(--color-dark);
+}
+
+.dark-theme a{
+  background: var(--color-dark);
+  color: var(--color-text);
+}
+
+.dark-theme a:hover{
+  background: var(--color-text);
+}
+
+.dark-theme main{
+  color: var(--color-text);
+}
+
+.dark-theme #limiteRange{
+background: var(--color-dark-variant);
+}
+
+.dark-theme #btnAjustarLimite{
+  background: var(--color-text);
+  color:var(--color-dark);
+}
+
+.dark-theme #btnAjustarLimite:hover{
+  box-shadow: none;
+}
+
+.dark-theme #limiteRange:hover{
+  box-shadow: none;
+}
+
+.dark-theme #limiteValor{
+  background: var(--color-dark);
+  color: var(--color-dark)s;
+}
+
+.dark-theme .navbar-brand:hover{
+  background:var(--color-dark);
+}
+
+
 .link {
   color: white;
 }
+
 
 body {
   background-color: #E8EEF6;
@@ -146,9 +214,6 @@ ul.components li.active {
   width: 100px;
   height: 27px;
   transform: translate(859px);
-
-
-
 
 }
 
