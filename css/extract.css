@@ -3,8 +3,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
 .dark-theme {
     --color-text: #fff;
-    --color-background: #181a1e;
-    --color-dark: #101214;
+    --color-background: #444654;
+    --color-dark: #2A2B32;
     --color-white: #202529;
     --color-dark-variant: #a3bdcc;
     --color-light: rgba(0, 0, 0, 0.4);
